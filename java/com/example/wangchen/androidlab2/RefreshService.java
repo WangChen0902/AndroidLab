@@ -28,7 +28,7 @@ public class RefreshService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        timer.schedule(timerTask, 0, 60000);
+        timer.schedule(timerTask, 0, 10000);
         return super.onStartCommand(intent, flags, startId);
     }
 
